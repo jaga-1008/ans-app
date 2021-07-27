@@ -1,0 +1,4 @@
+- hosts: apache2
+  become: yes
+  roles:
+    - apache

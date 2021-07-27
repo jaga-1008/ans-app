@@ -1,0 +1,8 @@
+- hosts: loadbalancer
+  become: yes
+  roles:
+    - loadbalancer
+- hosts: apache2
+  become: yes
+  roles:
+    - apache
