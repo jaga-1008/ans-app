@@ -1,0 +1,9 @@
+- hosts: localhost
+  become: yes
+  tasks:
+    - stat:
+        path: /home/ec2-user/ans-app/stat.yml
+      register: sts
+
+    - debug:
+        msg: "{{sts.stat}}"
